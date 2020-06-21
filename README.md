@@ -2,6 +2,14 @@
 
 Olá. Tudo bem? Abaixo segue algumas informações importantes que devem ser levadas em consideração ao avaliar a implemetação
 
+# Acessos - Endpoints e Swagger (Documentação interativa)
+
+A aplicação pode ser acessada pela URL: http://apisimio-env-1.eba-83m5gjbe.us-west-2.elasticbeanstalk.com
+
+* Recurso "/simian": http://apisimio-env-1.eba-83m5gjbe.us-west-2.elasticbeanstalk.com/simian
+* Recurso "/stats": http://apisimio-env-1.eba-83m5gjbe.us-west-2.elasticbeanstalk.com/stats
+* Swagger: http://apisimio-env-1.eba-83m5gjbe.us-west-2.elasticbeanstalk.com/swagger-ui.html
+
 
 # Validações
 
@@ -19,3 +27,4 @@ Olá. Tudo bem? Abaixo segue algumas informações importantes que devem ser lev
 * Foi criado uma classe "Response" ({data:"", erro: ""}) para padronizar o retorno das requisições. Onde o campo "data" contém o valor do objeto de retorno e campo "erro" contém mensagem de exceção quando houver;
 * No recurso "/stats" não foi utilizado a classe "Response" no retorno um vez que a documentação do desafio explicita o retorno deste endpoint;
 * Não foi utilizado Lombok;
+* Com relação a proporção entre Símio e Humano, enquanto houver apenas um tipo de DNA cadastrado, o campo "ratio" sempre será "0.0"
