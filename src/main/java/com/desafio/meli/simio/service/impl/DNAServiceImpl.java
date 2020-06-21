@@ -66,7 +66,7 @@ public class DNAServiceImpl implements DNAService {
 		float proporcaoSimio = 0.0f;
 		
 		if (quantTotalHumano == 0) {
-			proporcaoSimio = 1.0f;
+			proporcaoSimio = 0.0f;
 		} else {
 			proporcaoSimio = (float) quantTotalSimio / quantTotalHumano;
 		}
@@ -238,45 +238,5 @@ public class DNAServiceImpl implements DNAService {
 		
 		return false;
 	}
-/*	
-	private boolean contemApenasAsLetrasATCG(DNA dna){
-		//Nessa verificação a busca linear se saiu mais
-		// performática que o Regex 
-		
-		String valores = dna.getDna();
-		
-		for (int i=0; i < valores.length(); i++ ){
-			char c = valores.charAt(i);
-			if (c != 'A' && c != 'T' && c != 'C' && c != 'G' ){
-				throw new LetraNaoPermitidaException();
-			}
-		}
-		
-		return true;
-		
-	}
-	
-	private boolean ehMatrizMenorQueQuatro(DNA dna){
-		int n = dna.getMatriz();
-		int m = dna.getDna().length() / n;
-		
-		if (n < 4 || m < 4) {
-			throw new TamanhoMinimoDaMatrizNaoAceitoException(); 
-		}
-		
-		return true;
-	}
-	
-	private boolean ehMatrizQuadrada(DNA dna) {
-		int n = dna.getMatriz();
-		int m = dna.getDna().length() / n;
-		
-		if (n != m) {
-			throw new MatrizNaoQuadradaException();
-		}
-		
-		return true;
-	}
-*/
 	
 }

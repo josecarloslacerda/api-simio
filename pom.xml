@@ -11,8 +11,8 @@
 	<groupId>com.desafio.meli</groupId>
 	<artifactId>api-simio</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<packaging>war</packaging>
-	<name>simio</name>
+	<packaging>jar</packaging>
+	<name>api-simio</name>
 	<description>Desafio Meli</description>
 
 	<properties>
@@ -39,6 +39,11 @@
 			<groupId>org.postgresql</groupId>
 			<artifactId>postgresql</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>com.h2database</groupId>
+			<artifactId>h2</artifactId>
+			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
