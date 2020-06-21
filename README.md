@@ -27,4 +27,4 @@ A aplicação pode ser acessada pela URL: http://apisimio-env-1.eba-83m5gjbe.us-
 * Foi criado uma classe "Response" ({data:"", erro: ""}) para padronizar o retorno das requisições. Onde o campo "data" contém o valor do objeto de retorno e campo "erro" contém mensagem de exceção quando houver;
 * No recurso "/stats" não foi utilizado a classe "Response" no retorno um vez que a documentação do desafio explicita o retorno deste endpoint;
 * Não foi utilizado Lombok;
-* Com relação a proporção entre Símio e Humano, enquanto houver apenas um tipo de DNA cadastrado, o campo "ratio" sempre será "0.0"
+* Com relação a proporção entre Símio e Humano, enquanto houver apenas um tipos de DNAs cadastrados, o campo "ratio" sempre será "0.0"
